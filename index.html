@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivia FADUA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="trivia-container">
+    <h1>Trivia FADUA</h1>
+
+    <!-- Formulario de datos -->
+    <form id="datosForm">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
+      <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required />
+      <button type="submit">Comenzar</button>
+    </form>
+
+    <!-- Trivia -->
+    <form id="triviaForm" style="display: none;">
+      <div class="pregunta">
+        <label>1. ¿Qué marca de autos representamos?</label>
+        <select name="respuesta1" required>
+          <option value="">Elige una opción</option>
+          <option value="Fiat">Fiat</option>
+          <option value="Ford">Ford</option>
+          <option value="Renault">Renault</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>2. ¿Qué tipo de servicios ofrecemos?</label>
+        <select name="respuesta2" required>
+          <option value="">Elige una opción</option>
+          <option value="Venta, repuestos y taller">Venta, repuestos y taller</option>
+          <option value="Sólo ventas">Sólo ventas</option>
+          <option value="Sólo taller">Sólo taller</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>3. ¿Dónde se realizó la primera entrega?</label>
+        <select name="respuesta3" required>
+          <option value="">Elige una opción</option>
+          <option value="Club Hípico">Club Hípico</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Base operativa">Base operativa</option>
+        </select>
+      </div>
+
+      <!-- Pregunta 4 aleatoria -->
+      <div class="pregunta">
+        <label id="labelPregunta4">Pregunta 4</label>
+        <select id="respuesta4" required></select>
+      </div>
+
+      <!-- Pregunta 5 aleatoria -->
+      <div class="pregunta">
+        <label id="labelPregunta5">Pregunta 5</label>
+        <select id="respuesta5" required></select>
+      </div>
+
+      <button type="submit">Enviar respuestas</button>
+    </form>
+
+    <div id="resultado" class="mensaje"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
