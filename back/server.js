@@ -5,7 +5,14 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors()); // Permite solicitudes desde cualquier origen
+const cors = require('cors');
+
+app.use(cors({
+  origin: "*",
+  methods: ["POST", "GET", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+}));
+
 
 app.get('/proxy', async (req, res) => {
   try {
