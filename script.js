@@ -1,4 +1,5 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbyHheWRWFGtqKM4xKJzqg8NoeIfQZD9kdoMpkpa-pHMKuJ_a_uVfSJ8OiXCrYLtb6pv4g/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzeD66pA42PpcFYPSdgR8tJ-bqHC-9zde89r5_mCGN1kesTrlB0Lr_kxfWWRpCt8I9J/exec";
+
 
 const preguntas4 = [
   { texto: "¿Cuál es un modelo SUV?", opciones: ["Cronos", "Toro", "Titano"], correcta: "Toro" },
